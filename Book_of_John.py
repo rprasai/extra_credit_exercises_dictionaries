@@ -12,16 +12,9 @@ book_list = book_string.split()
 for word in book_list:
     if lookup_disc.get(word, None) is not None:
         lookup_disc[word] += 1
-"""
 
-for key in lookup_disc:
-    if key in book_list not None:
-        lookup_disc[key] += 1
-
-"""
 for key, value in lookup_disc.items():
     print(key + ":\t", value)
-
 
 """
 lookup_list = ["Father", "God", "Christ", "Spirit", "life", "man"]
